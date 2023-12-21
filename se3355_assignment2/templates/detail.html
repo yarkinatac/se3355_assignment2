@@ -56,10 +56,23 @@
                 max-height: 300px;
             }
         }
+        .breadcrumb {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/category/{{ product.category }}">Category: {{ product.category }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ product.title }}</li>
+            </ol>
+        </nav>
+
+        <!-- Back Button -->
         <button onclick="window.history.back();" class="btn btn-secondary back-button">Back</button>
 
         <div class="details-container">
