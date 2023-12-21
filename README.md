@@ -22,10 +22,10 @@ The data model for the project is as follows:
   - `name`: The name of the category.
   - `product_count`: The number of products in this category.
 
-The database schema is implemented using SQLite and defined in `models.py` using the SQLAlchemy ORM.
+The database schema is implemented using SQLite and defined in `initialize_db.py` using the SQLite.
 
 ## Assumptions
-
+- My application is developed with Flask. It is structured around the layout of Sahibinden, including a homepage, search results, and details. Each product card is designed to display an image, a description, the price and address . A search feature is integrated to query across all product attributes. For responsive design i used Bootstrap framework.
 - All users have browsers that support JavaScript.
 - Product information is regularly updated.
 - No session management or authentication system is required for users.
@@ -37,12 +37,7 @@ Some issues encountered during the development of the project:
 - Optimization of the search functionality: Performance testing with large data sets is needed.
 - Responsive design: Layout disruptions have been observed on some mobile devices and need to be corrected.
 
-## Installation
+## DEPLOYMENT
 
-To run the project on your local machine, follow these steps:
-
-```bash
-git clone https://github.com/yourUsername/yourProjectName.git
-cd yourProjectName
-pip install -r requirements.txt
-flask run
+I deployed the web app to Azure Web Services. 
+[Deployed at](https://se3355assignment2.azurewebsites.net/)
